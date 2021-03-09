@@ -1,4 +1,4 @@
-package cn.mypji.GenericServlet;
+package cn.mypji.GenericServlet.servlet;
 
 import java.io.*;
 import javax.servlet.http.*;
