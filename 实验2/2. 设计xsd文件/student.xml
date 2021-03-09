@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<student xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="student.xsd">
+    <name> Kate </name>
+    <gender> female </gender>
+    <score> 377.5 </score>
+    <age>18</age>
+</student>
