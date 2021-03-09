@@ -1,0 +1,16 @@
+<!ELEMENT store (goods, buyings)>
+<!ELEMENT goods (good+)>
+<!ELEMENT buyings (tuple+)>
+
+<!ELEMENT good (name)>
+<!ELEMENT name (#PCDATA)>
+
+<!ELEMENT tuple (buydate,coder)>
+<!ELEMENT buydate (#PCDATA)>
+<!ELEMENT coder (#PCDATA)>
+
+<!ATTLIST good
+        goodid ID #REQUIRED>
+<!ATTLIST coder
+        alias CDATA #REQUIRED
+        bought CDATA #IMPLIED>

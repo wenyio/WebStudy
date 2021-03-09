@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>设计表单</title>
+</head>
+<body>
+    <form>
+        用户名：<input /><br/>
+        密&nbsp;&nbsp;&nbsp;码：<input type="password" /><br/>
+        验证码：<input type="number" /><br/>
+        请选择会员类型：<br/>
+        <input type="radio" name="user" />高级会员<br/>
+        <input type="radio" name="user" />会员<br/>
+        请选择技能：<br/>
+        <input type="checkbox" name="major" /> 软件工程<br/>
+        <input type="checkbox" name="major" /> 人工智能<br/>
+        <input type="checkbox" name="major" /> 计算机技术<br/>
+        学历：
+        <select>
+            <option>高中</option>
+            <option>大专</option>
+            <option>本科</option>
+        </select> <br/>
+        <button type="submit" onclick="handleSubmit()">提交</button>
+        <button type="reset">重置</button>
+    </form>
+    <script type="text/javascript">
+        function handleSubmit() {
+            alert("表单已经提交")
+        }
+    </script>
+</body>
+</html>

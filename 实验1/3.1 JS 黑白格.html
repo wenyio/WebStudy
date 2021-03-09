@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>黑白格</title>
+    <style>
+        #checkerboard {
+            display: flex; /* 弹性盒 */
+            flex-wrap: wrap; /* 换行 */
+            width: 400px;
+        }
+        .square {
+            width: 48px;
+            height: 48px;
+            border: 1px solid gray;
+        }
+        .white {
+            background-color: white;
+        }
+        .black {
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div id="checkerboard">
+    </div>
+    <script>
+        let x = 8;
+        let check = document.getElementById("checkerboard");
+        for (let i = 0; i < x; i++) {
+            for (let j = 0; j < x; j++) {
+                let square = document.createElement("div")
+                square.classList.add("square")
+                if ((i + j) % 2 === 0) {
+                    square.classList.add("white");
+                } else {
+                    square.classList.add("black");
+                }
+                check.appendChild(square)
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+请求网址: https://github.com/
+请求方法: GET
+远程地址: 52.74.223.119:443
+状态码: 304
+ 版本: 1.1
+Referrer 政策: strict-origin-when-cross-origin
+请求头信息:
+:authority: github.com
+:method: GET
+:path: /
+:scheme: https
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+accept-encoding: gzip, deflate, br
+accept-language: zh-CN,zh;q=0.9,en;q=0.8
+cache-control: max-age=0
+cookie: _octo=GH1.1.1299059352.1574416154; _ga=GA1.2.266644830.1574416155; _device_id=4f381148867789cf401286f23601f974; tz=Asia%2FShanghai; cookie-preferences=analytics:accepted; logged_in=no; _gh_sess=CJeQI%2FfNlXQ7fIeW1bs30I5qkHUXRRsiQlBKAc%2BsWjuofbv1%2BzE6W2qKZK81MFZvmPK4PsYMt9rV1UJw75dLh%2BTJjt%2FraPbxbXlRwBZijHZTqL0Oa9BH6DZ5vHJ4Rti2w1gV4kZZaiqI4DmtHBks63eVdmQnUM5jFBiDUpqhDVjD%2FO1AmN1WSc4hQD74eXV3epu8C%2F1F%2F49AaL6BLNajcHdMmjfSaT7Bds6khSStFd3aHFpOP3zDF%2FNJbzHdj5X0bfCHKz2oCtP4XFeFMEMEy%2FXbNUOTJ1U0irdACBxxGSWCPu5lwnIgaMAaGzITUIgm0IjWQHBrxgqJzn6Y3HU%2FJ7m8HR3qP2xYCxkB6IL1UWmrlDzVgqT%2FSWDhB8LIHGifqJWtNQ4BFV8rcdXPWL9rsCIfgWcbP6N5FH%2FbRUYhzkewWhu45bQ8Ivy6Myt3niWz0wkSjBmkKbd%2B7hTV%2B9LT0t8tAE4YEo%2FmneLoqRYuCIoehUq1XPHSw73MwXndYJt6M5KsZ%2BQPZ2Uu6Nb%2BVdbHRpLRWrkRNoNlakrl446uFzeYQ0Y0YGPq6awo1BElebpebbbW9Y%2FT5Yy7sLs%2FOty8Ib9kkPMKhNjZCLDdpy9J8pddUw%2F0tVdv%2FhUL%2BSv23BVZzuHdsiBB6ZZn02xhaHGECv%2BL7N0Dfb8%2BinS1vpCkkujRfjVWgZMZwoGMmwHfg%2BwLSKTwIZUuY5SeMkTjw%2FBBm%2FB8wT8gl4MdqxORop3sVlMY4u%2FbZ%2F8h8sSWcxKUHBKSNvwk88%2FOojNtkmPgPOVlfUCENUdRLHp1VFv%2BHyRj4dwzlNaltafvMeVK0%2Bx5vXTPYZgEB5%2Fa7laWHb%2B4SDYkhm8CzbOse1FzdLeR2KCMTWvy0HOaskQlZnDDKHcrb%2FS4w3%2BL8Zmz0Cpmg5CVf%2Bsm8%2BvtDmSpLvbruT1Escmw76lpy8heqclodS2shJ4c84AKANsC1J%2BWT0TLRWex26hTZAdZw5CbAOy4eOoFhLwhnB0%2F5EbJB03%2FlaV6JQVjbZyQxp7d7C1jrvXygEUUIZN6DYU%2BX3YCN1%2FfqdUuzBkcvM3YOEUmpT0IQWzya6EHeVUGL3QzZniI0E6Nf1wkHxdr5XpMG06IUMWxhyiKrGm7wWSvXg9SCg25iYFAC3uAFl4uPzCFQkBhyZiroa5dOYtL3F8c8jwbD2GfAM4gpY%2FZjtxXswy6eVTWTn111aUd8dDFERNsQeB9Yg%2FU5c%2FpwoKqHM7U1ebcYocKzy2JVySrrRlxhq5idWWV9Z1qL1A%3D--owdV1xv452iKfODD--nLE3yEM8y9iEJVSwXImq5w%3D%3D
+if-none-match: W/"cf37401c3a4a346b892b0b8566c3218a"
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+sec-ch-ua-mobile: ?0
+sec-fetch-dest: document
+sec-fetch-mode: navigate
+sec-fetch-site: cross-site
+sec-fetch-user: ?1
+upgrade-insecure-requests: 1
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36
+
+响应头信息:
+accept-ranges: bytes
+cache-control: max-age=0, private, must-revalidate
+content-encoding: gzip
+content-language: en-US
+content-security-policy: default-src 'none'; base-uri 'self'; block-all-mixed-content; connect-src 'self' uploads.github.com www.githubstatus.com collector.githubapp.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events wss://alive.github.com github.githubassets.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com; frame-ancestors 'none'; frame-src render.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com secured-user-images.githubusercontent.com/ *.githubusercontent.com customer-stories-feed.github.com spotlights-feed.github.com; manifest-src 'self'; media-src github.githubassets.com; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/socket-worker-5029ae85.js gist.github.com/socket-worker-5029ae85.js
+content-type: text/html; charset=utf-8
+date: Mon, 08 Mar 2021 08:05:20 GMT
+etag: W/"cf37401c3a4a346b892b0b8566c3218a"
+expect-ct: max-age=2592000, report-uri="https://api.github.com/_private/browser/errors"
+referrer-policy: origin-when-cross-origin, strict-origin-when-cross-origin
+server: GitHub.com
+strict-transport-security: max-age=31536000; includeSubdomains; preload
+vary: X-PJAX, Accept-Language, Accept-Encoding, Accept, X-Requested-With
+x-content-type-options: nosniff
+x-frame-options: deny
+x-github-request-id: EFA4:18B2:17EE8B5:1988170:6045DAC5
+x-rails-requested-accept-language: en
+x-xss-protection: 1; mode=block

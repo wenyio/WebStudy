@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>三剑客综合练习</title>
+    <style>
+        #disp {
+            font-family: "黑体";
+            font-weight: bold;
+            font-size: 48px;
+            color: blue;
+            border: 3px solid gainsboro;
+            text-align: center;
+            width: 620px;
+            height: 100px;
+            margin: 12% auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="disp"></div>
+    <script>
+        // 五一劳动节
+        var wuyi = new Date(2021, 5 - 1, 1, 0, 0, 0) // 2021-05-01 00:00:00
+        var now = new Date();
+        var disp = document.getElementById("disp");
+        setInterval(() => {
+            now = new Date();
+            if (now.getTime() < wuyi.getTime()) {
+                const dateDiff = wuyi.getTime() - now.getTime(); // 时间差的毫秒数
+                const day = Math.floor(dateDiff / (24 * 3600 * 1000)); // 计算出相差天数
+                const leave1 = dateDiff % (24 * 3600 * 1000); // 计算天数后剩余的毫秒数
+                const hours = Math.floor(leave1 / (3600 * 1000)); // 计算出小时数
+                // 计算相差分钟数
+                const leave2 = leave1 % (3600 * 1000); // 计算小时数后剩余的毫秒数
+                const minutes = Math.floor(leave2 / (60 * 1000)); // 计算相差分钟数
+                // 计算相差秒数
+                const leave3 = leave2 % (60 * 1000); // 计算分钟数后剩余的毫秒数
+                const seconds = Math.round(leave3 / 1000);
+                disp.innerHTML = "距离今年劳动节还有<br/>" + day + "天" + hours + "小时" + minutes + "分钟" + seconds + "秒"
+            } else {
+                disp.innerHTML = "距离今年劳动节还有<br/>(已过)"
+            }
+        }, 1000);
+    </script>
+</body>
+</html>

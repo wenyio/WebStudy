@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE store SYSTEM "store.dtd">
+<store>
+    <goods>
+        <good goodid="g0117">
+            <name>TensorFlow CookBook</name>
+        </good>
+        <good goodid="g0118">
+            <name>JavaWeb入门</name>
+        </good>
+        <good goodid="g0119">
+            <name>Servlet深入研究</name>
+        </good>
+    </goods>
+    <buyings>
+        <tuple>
+            <buydate>2020-01-23</buydate>
+            <coder alias="Zennah" bought="g0117 g0119" />
+        </tuple>
+        <tuple>
+            <buydate>2020-02-02</buydate>
+            <coder alias="Meow" bought="g0117 g0118 g0119" />
+        </tuple>
+        <tuple>
+            <buydate>2020-02-26</buydate>
+            <coder alias="Tomcat"  />
+        </tuple>
+    </buyings>
+</store>

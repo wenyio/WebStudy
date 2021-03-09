@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>计时器</title>
+    <style>
+        #checkerboard {
+            font-size: 36px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div id="checkerboard">
+            0
+        </div>
+        <button onclick="beginHandle()">计时</button>
+        <button onclick="endHandle()">结束</button>
+    </div>
+    <script>
+        var i = 0;
+        var check = document.getElementById("checkerboard")
+        var timeId;
+        function beginHandle() {
+            endHandle()
+            timeId = setInterval(() => {
+                i++;
+                check.innerHTML = i
+            }, 1000);
+        }
+        function endHandle() {
+            i = 0;
+            check.innerHTML = i
+            window.clearInterval(timeId)
+        }
+        
+    </script>
+</body>
+</html>

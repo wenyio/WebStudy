@@ -1,0 +1,6 @@
+将Tomcat配置到IDEA环境中，以后就在IDEA环境中启停Tomcat。实际操作一遍。然后把过程记录下来。
+
+1. 点击File>New>Project
+2. 点击Java Enterprise，选择Web application、Tomcat版本，勾选Maven，JUnit，点击Next
+3. 点击Next，输入项目名及相关信息
+4. 启动Tomcat
