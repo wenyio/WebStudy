@@ -28,5 +28,32 @@
     <servlet-mapping>
         <servlet-name>InfoServlet</servlet-name>
         <url-pattern>/info</url-pattern>
-    </servlet-mapping>f
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DownManagerServlet</servlet-name>
+        <servlet-class>cn.njpji.RequestAndResponse.servlet.DownManagerServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DownManagerServlet</servlet-name>
+        <url-pattern>/download</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>IncludedServlet</servlet-name>
+        <servlet-class>cn.njpji.RequestAndResponse.servlet.IncludedServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>IncludedServlet</servlet-name>
+        <url-pattern>/includedServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>IncludingServlet</servlet-name>
+        <servlet-class>cn.njpji.RequestAndResponse.servlet.IncludingServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>IncludingServlet</servlet-name>
+        <url-pattern>/includingServlet</url-pattern>
+    </servlet-mapping>
 </web-app>

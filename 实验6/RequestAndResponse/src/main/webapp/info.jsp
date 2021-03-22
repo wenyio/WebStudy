@@ -1,3 +1,4 @@
+<%@ page import="java.io.PrintWriter" %>
 <%--
   Created by IntelliJ IDEA.
   User: isColt
@@ -11,9 +12,23 @@
     <title>学生爱好信息</title>
 </head>
 <body>
-学号：<br/>
-姓名：<br/>
-性别：<br/>
-爱好：<br/>
+<%--学号：<%=request.getParameter("number")%><br/>--%>
+<%--姓名：${username}<br/>--%>
+<%--性别：${sex}<br/>--%>
+<%--爱好：<br/>--%>
+<%
+    PrintWriter writer = response.getWriter();
+    String number = request.getParameter("number");
+    String username = request.getParameter("username");
+    String sex = request.getParameter("sex");
+    String[] hobbies = request.getParameterValues("hobby");
+    writer.println("学号：" + number + "<br/>");
+    writer.println("姓名：" + username + "<br/>");
+    writer.println("性别：" + sex + "<br/>");
+    writer.println("爱好：");
+    for (String hobby : hobbies) {
+        writer.println(hobby + "、");
+    }
+%>
 </body>
 </html>
