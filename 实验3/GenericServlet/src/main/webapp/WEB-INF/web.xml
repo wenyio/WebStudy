@@ -20,7 +20,7 @@
         <servlet-name>RMBServlet</servlet-name>
         <url-pattern>/rmb</url-pattern>
     </servlet-mapping>
-    <!-- Servlet End -->
+    <!-- RMBServlet End -->
 
     <!-- StudentServlet Begin -->
     <!-- Servlet配置 -->
