@@ -1,4 +1,4 @@
-package com.example.CookieAndSession.session.example02;
+package com.example.JSP.example02;
 
 import java.util.Date;
 
