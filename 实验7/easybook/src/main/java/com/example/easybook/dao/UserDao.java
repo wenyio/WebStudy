@@ -108,10 +108,11 @@ public class UserDao {
                 preparedStatement.setTimestamp(2, new Timestamp(save.getLockTime().getTime() + 8 * 60 * 60 * 1000));
                 preparedStatement.setString(3, save.getUsername());
             } else {
-                sql = "insert into user(username,password) values(?,?)";
+                sql = "insert into user(username,password,lockTime) values(?,?,?)";
                 preparedStatement = getConn().prepareStatement(sql);
                 preparedStatement.setString(1, save.getUsername());
                 preparedStatement.setString(2, save.getPassword());
+                preparedStatement.setTimestamp(3, new Timestamp(save.getLockTime().getTime() + 8 * 60 * 60 * 1000));
             }
             result = preparedStatement.executeUpdate();
         } catch (SQLException e) {

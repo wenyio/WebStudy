@@ -7,7 +7,7 @@ public class User {
 	private String username;
 	private String password;
 	private Integer errCount = 0; // 错误次数
-	private Date lockTime; // 可登录时间
+	private Date lockTime = new Date(); // 可登录时间
 
 	public User() {
 	}
