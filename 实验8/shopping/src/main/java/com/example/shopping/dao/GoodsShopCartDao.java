@@ -40,7 +40,7 @@ public class GoodsShopCartDao {
         List<GoodsShopCart> goodsShopCartList = findByShopCart(shopCartId);
         for (GoodsShopCart goodsShopCart : goodsShopCartList) {
             if (goodsShopCart.getGoods().getId().equals(goodsId)) {
-                result  = goodsShopCart;
+                result = goodsShopCart;
             }
         }
         return result;
@@ -59,7 +59,8 @@ public class GoodsShopCartDao {
     }
 
     /**
-     *  移出购物车
+     * 移出购物车
+     *
      * @param goodsShopCart
      * @param num
      */
@@ -94,6 +95,7 @@ public class GoodsShopCartDao {
 
     /**
      * 移入购物车
+     *
      * @param goodsShopCart
      * @param num
      */
@@ -125,6 +127,11 @@ public class GoodsShopCartDao {
 
         List<GoodsShopCart> list = findByShopCart(shopCartId);
         for (GoodsShopCart goodsShopCart : list) {
+            // 更新库存
+            Goods goods = goodsShopCart.getGoods();
+            Integer num = goodsShopCart.getNum();
+            goods.setMargin(goods.getMargin() + num);
+            GoodsDao.update(goods);
             goodsShopCartDB.remove(goodsShopCart.getId());
         }
     }
