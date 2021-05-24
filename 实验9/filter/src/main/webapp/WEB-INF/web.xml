@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <filter>
+        <filter-name>ThirdFilter</filter-name>
+        <filter-class>com.example.filter.myfilter.ThirdFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>ThirdFilter</filter-name>
+        <url-pattern>/test.jsp</url-pattern>
+    </filter-mapping>
+    <filter>
+        <filter-name>SecondFilter</filter-name>
+        <filter-class>com.example.filter.myfilter.SecondFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>SecondFilter</filter-name>
+        <url-pattern>/test.jsp</url-pattern>
+    </filter-mapping>
+    <filter>
+        <filter-name>FirstFilter</filter-name>
+        <filter-class>com.example.filter.myfilter.FirstFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>FirstFilter</filter-name>
+        <url-pattern>/test.jsp</url-pattern>
+    </filter-mapping>
+</web-app>
