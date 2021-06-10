@@ -2,7 +2,6 @@
 <%@ page import="com.example.onlineListener.vo.User" %>
 <%@ page import="com.example.onlineListener.vo.LoginInfo" %>
 <%@ page import="java.util.List" %>
-<%@ page import="java.util.ArrayList" %>
 <%@ page import="com.example.onlineListener.dao.LoginInfoDao" %>
 <html>
 <head>

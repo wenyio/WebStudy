@@ -1,13 +1,7 @@
 package com.example.onlineListener.listener;
 
-import com.example.onlineListener.dao.LoginInfoDao;
-import com.example.onlineListener.vo.LoginInfo;
-import com.example.onlineListener.vo.User;
-
 import javax.servlet.*;
-import javax.servlet.annotation.WebListener;
 import javax.servlet.http.*;
-import java.util.Date;
 
 public class MyAttributeListener implements ServletContextAttributeListener,
         HttpSessionAttributeListener, ServletRequestAttributeListener {
